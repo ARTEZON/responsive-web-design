@@ -1,0 +1,671 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.9rem;
+    color: white;
+}
+
+section {
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.content {
+    width: 88%;
+    max-width: 1125px;
+    margin: 100px auto;
+}
+
+#conqueror {
+    height: 100vh;
+    min-height: 480px;
+    max-height: 1080px;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.1)),
+                      url("../images/backgrounds/bg1.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.absolute-centered {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-full {
+    bottom: 20%;
+    margin-bottom: 0;
+}
+
+.header-container {
+    width: max-content;
+}
+
+.header-container.right-align {
+    margin-left: auto;
+}
+
+.right-align > .header-text {
+    text-align: right;
+}
+
+.decorative-line {
+    float: right;
+    background-color: white;
+    height: 10px;
+    position: relative;
+    top: calc(2.25rem - 10px);
+}
+
+.right-align > .decorative-line {
+    float: left;
+}
+
+.decorative-line.shadow {
+    box-shadow: 0 0 40px rgba(0,0,0,0.5);
+}
+
+.header-text.shadow {
+    text-shadow: 0 0 40px rgba(0,0,0,0.5);
+}
+
+.header-text {
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    font-size: 2.25rem;
+    color: white;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1.1;
+}
+
+.header-text > span {
+    white-space: nowrap;
+}
+
+.header-line-1 {
+    margin-bottom: 14px;
+}
+
+.header-line-2 {
+    margin-bottom: 18px;
+    color: #facd3d;
+    font-size: 4.5rem;
+}
+
+.header-line-1.big {
+    font-size: 4.5rem;
+    margin-bottom: 6px;
+}
+
+.header-line-2.big {
+    font-size: 6rem;
+    margin-bottom: 14px;
+}
+
+.header-line-3.big {
+    font-size: 3rem;
+}
+
+#section-1-decorative-line {
+    top: calc(4.5rem - 10px);
+    left: 8px;
+    width: calc(100% - 140px);
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 -20px 0;
+}
+
+.flex-element {
+    margin: 0 20px 0;
+}
+
+.content-side {
+    flex-basis: 50%;
+}
+
+.content-side .header-line-2 {
+    margin-left: -1px;
+}
+
+.content-side .header-line-3 {
+    margin-left: 2px;
+    margin-bottom: 100px;
+}
+
+#new-land-cruiser {
+    display: grid;
+    max-height: 1000px;
+}
+
+#section-2-bg {
+    position: relative;
+    margin: 320px auto 0;
+    grid-area: 1/1/1/1;
+    width: calc(min(100%, 2560px));
+    z-index: -1;
+}
+
+#section-2-content {
+    grid-area: 1/1/1/1;
+}
+
+#section-2-decorative-line {
+    right: 2px;
+    width: calc(100% - 86px);
+}
+
+#section-2-content p {
+    max-width: 78%;
+    margin: 10px 1px 85px;
+}
+
+.read-more-link {
+    display: block;
+    width: 74px;
+    text-align: center;
+    margin: 0 1px;
+    border-width: 0 0 2px 0;
+    border-color: #facd3d;
+    border-style: solid;
+    padding-bottom: 5px;
+    transition: color 250ms, width 250ms, margin 250ms;
+}
+
+.read-more-link:hover {
+    color: #facd3d;
+    width: 80px;
+    margin: 0 -2px;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+#section-3-content .header-line-1 {
+    padding-left: 280px;
+}
+
+#section-3-decorative-line {
+    width: calc(100% - 88px);
+}
+
+.feature-block {
+    margin: 20px;
+}
+
+.feature-icon, .feature-title {
+    margin-bottom: 30px;
+}
+
+.feature-icon {
+    width: 65px;
+}
+
+#safety {
+    height: 100vh;
+    min-height: 480px;
+    max-height: 1080px;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.05), rgba(0,0,0,0.05)),
+                      url("../images/backgrounds/bg3.jpg");
+    background-size: cover;
+    background-position: 50% 35%;
+}
+
+#section-4-decorative-line {
+    width: calc(100% - 124px);
+}
+
+#exterior {
+    height: 940px;
+}
+
+#section-5-bg {
+    width: 100%;
+    position: absolute;
+    top: 350px;
+    z-index: -1;
+    height: 100%;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.1)),
+    url("../images/backgrounds/bg4.png");
+    background-size: calc(min(100%, 2560px));
+    background-position: 50% 0;
+    background-repeat: inherit;
+}
+
+#section-5-content .header-container {
+    width: 500px;
+}
+
+#section-5-decorative-line {
+    width: calc(100% - 168px);
+}
+
+#section-5-content {
+    text-align: right;
+}
+
+#section-5-content > .read-more-link {
+    margin-left: auto;
+}
+
+#section-6-decorative-line {
+    width: calc(100% - 288px);
+    margin-right: 44px;
+}
+
+#section-6-content .header-line-2 {
+    margin-left: -2px;
+}
+
+.car-view {
+    width: 32.5%;
+    margin-top: 100px;
+}
+
+#gallery {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+}
+
+.gallery-image {
+    width: 100%;
+    max-height: 1440px;
+    object-fit: cover;
+}
+
+#contact-us {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("../images/backgrounds/bg6.jpg");
+    background-size: cover;
+    background-position: 50% 40%;
+}
+
+#contacts {
+    line-height: 1.6;
+}
+
+#contacts > p {
+    margin-bottom: 1.6em;
+}
+
+.social-icon {
+    width: 1.8em;
+    margin-right: 0.5em;
+}
+
+#header-contact-us {
+    margin-top: -7px;
+    margin-left: -2px;
+}
+
+#header-follow-toyota {
+    margin-left: -2px;
+}
+
+#message-form {
+    font-size: 1rem;
+}
+
+.form-field {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px 12px;
+    border: white 1px solid;
+    background: rgba(0,0,0,0.2);
+    backdrop-filter: blur(30px);
+    color: inherit;
+    font: inherit;
+    resize: none;
+    overflow: visible;
+}
+
+.form-field:focus, #submit-button:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(255,255,255,0.5);
+}
+
+#submit-button {
+    padding: 10px 30px;
+    margin: -6px 0 10px 0;
+    background: #f9c51f;
+    color: #111111;
+    font: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+.submit-confirmation.window {
+    background: rgba(0,128,0,0.5);
+    backdrop-filter: blur(20px);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 30px 40px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    z-index: 10;
+    transition: opacity 250ms;
+}
+
+.submit-confirmation.backdrop {
+    background: rgba(0,0,0,0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 250ms;
+}
+
+#footer {
+    text-align: center;
+    padding: 23px;
+    background: #333333;
+    line-height: 1.8;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .content {
+        margin: 70px auto;
+    }
+
+    #conqueror {
+        min-height: 320px;
+        max-height: 768px;
+    }
+
+    #section-2-content {
+        margin-bottom: 0;
+    }
+
+    #section-2-content .header-container {
+        max-width: 265px;
+    }
+
+    #section-2-content .header-line-3 {
+        line-height: 1.4;
+    }
+
+    #section-2-bg {
+        margin-top: auto;
+        width: 100%;
+    }
+
+    #section-2-content {
+        min-height: 740px;
+    }
+
+    .content-side .header-line-3 {
+        margin-bottom: 65px;
+    }
+
+    #exterior {
+        height: 720px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .content {
+        margin: 50px auto;
+        width: 85%;
+    }
+
+    #conqueror {
+        min-height: 240px;
+        max-height: 500px;
+    }
+
+    #section-1-content > .header-container {
+        padding: 0 50px;
+    }
+
+    #section-1-decorative-line {
+        top: calc(2.25rem - 10px);
+        left: 8px;
+        width: calc(100% - 80px);
+    }
+
+    .header-line-1.big {
+        font-size: 2.25rem;
+        margin-bottom: 6px;
+    }
+
+    .header-line-2.big {
+        font-size: 4.5rem;
+        margin-bottom: 14px;
+    }
+
+    .header-line-3.big {
+        font-size: 2.25rem;
+    }
+
+    .min768 {
+        flex-direction: column;
+    }
+
+    #section-2-content .header-container {
+        max-width: 100%;
+    }
+
+    #section-2-content .header-line-3 {
+        line-height: 1.1;
+        margin-bottom: 0;
+    }
+
+    #section-2-bg {
+        margin-top: 500px;
+        width: 150%;
+        transform: translate(-32%, 0);
+    }
+
+    #section-2-content {
+        min-height: 740px;
+    }
+
+    #section-2-content p {
+        max-width: 100%;
+        margin: 30px 1px 0;
+    }
+
+    #section-2-content .read-more-link {
+        margin-top: 30px;
+    }
+
+    .content-side .header-line-3 {
+        margin-bottom: 65px;
+    }
+
+    #section-3-features {
+        flex-wrap: wrap;
+        flex-basis: 50%;
+    }
+
+    .feature-block {
+        width: calc(50% - 40px);
+    }
+
+    #exterior {
+        height: 650px;
+    }
+
+    #section-5-content > .header-container {
+        max-width: 500px;
+    }
+
+    #section-6-content > .header-container {
+        width: 500px;
+    }
+
+    #car-view-container {
+        align-items: center;
+    }
+
+    .car-view {
+        width: 400px;
+        margin-top: 50px;
+    }
+
+    #gallery {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        justify-content: center;
+    }
+
+    .gallery-image {
+        max-height: 400px;
+    }
+
+    #header-follow-toyota {
+        margin-top: 50px;
+    }
+}
+
+
+@media only screen and (max-width: 576px) {
+    section {
+        min-width: 320px;
+    }
+
+    .content {
+        margin: 30px auto;
+    }
+
+    #conqueror {
+        min-height: 280px;
+        max-height: 300px;
+    }
+
+    .header-text {
+        font-size: 1.35rem;
+        line-height: 0.9;
+    }
+
+    .header-line-2 {
+        font-size: 2.7rem;
+        margin-bottom: 16px;
+    }
+
+    .header-line-3 {
+        margin-left: -3px;
+    }
+
+    .header-line-1.big {
+        font-size: 1.5rem;
+    }
+
+    .header-line-2.big {
+        font-size: 2.85rem;
+        margin-bottom: 8px;
+    }
+
+    .header-line-3.big {
+        font-size: 1.5rem;
+    }
+
+    .decorative-line {
+        height: 5px;
+    }
+
+    #section-1-decorative-line {
+        top: calc(1.5rem - 7px);
+        left: 4px;
+        width: calc(100% - 55px);
+    }
+
+    #section-2-decorative-line {
+        top: calc(1.35rem - 6px);
+        left: 4px;
+        width: calc(100% - 50px);
+    }
+
+    #section-2-bg {
+        margin-top: 550px;
+        width: 120%;
+        transform: translate(-15%, 0);
+    }
+
+    #section-2-content {
+        min-height: 640px;
+    }
+
+    #section-3-content .header-line-1 {
+        padding-left: 0;
+    }
+
+    #section-3-decorative-line {
+        top: calc(1.35rem - 7px);
+        left: 4px;
+        width: calc(100% - 60px);
+    }
+
+    .feature-block {
+        width: 100%;
+    }
+
+    #section-4-content .header-container {
+        width: 180px;
+    }
+
+    #section-4-content .header-line-2 {
+        line-height: 1.1;
+    }
+
+    #section-4-decorative-line {
+        top: calc(1.35rem - 7px);
+        left: 4px;
+        width: calc(100% - 72px);
+    }
+
+    #section-5-content .header-container {
+        width: 250px;
+    }
+
+    #section-5-content .header-line-2,
+    #section-6-content .header-line-2 {
+        line-height: 1.1;
+    }
+
+    #section-5-decorative-line {
+        top: calc(1.35rem - 7px);
+        left: 4px;
+        width: calc(100% - 110px);
+    }
+
+    #exterior {
+        height: calc(480px + 20vw);
+    }
+
+    #section-6-content .header-container {
+        width: 300px;
+    }
+
+    #section-6-decorative-line {
+        top: calc(1.35rem - 7px);
+        width: calc(100% - 190px);
+    }
+
+    .car-view {
+        width: 70%;
+    }
+}
